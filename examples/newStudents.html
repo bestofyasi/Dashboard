@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="../assets/img/apple-icon.png">
   <link rel="icon" href="../assets/img/favicon.png">
   <title>
-    Sarvodaya | Student Management System Dashboard
+    Sarvodaya | Student Management System Dashbord
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
@@ -83,37 +83,18 @@
             </a>
           </li>
           <li class="nav-item ">
-              <a class="nav-link"  data-toggle="collapse" href="./dashboard.html">
-                  <i class="material-icons">face</i>
-                  <p> Student </p>
-              </a>
-
-          </li>
-          <li class="nav-item ">
-              <a class="nav-link" href="./dashboard.html">
-                  <i class="material-icons">home</i>
-                  <p> Center </p>
-              </a>
-          </li>
-          <li class="nav-item ">
-              <a class="nav-link" href="./dashboard.html">
-                  <i class="material-icons">school</i>
-                  <p> Diploma </p>
-              </a>
-          </li>
-          <li class="nav-item ">
             <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
-              <i class="material-icons">face</i>
-              <p>Student
+              <i class="material-icons">settings</i>
+              <p> Main Settings
                 <b class="caret"></b>
               </p>
             </a>
             <div class="collapse" id="pagesExamples">
               <ul class="nav">
                 <li class="nav-item ">
-                  <a class="nav-link" href="./newStudents.html">
-                    <i class="material-icons">add</i>
-                    <span class="sidebar-normal">Add New  </span>
+                  <a class="nav-link" href="./students.html">
+                    <i class="material-icons">perm_data_setting</i>
+                    <span class="sidebar-normal">Studetnt </span>
                   </a>
                 </li>
                 <li class="nav-item ">
@@ -128,6 +109,7 @@
                     <span class="sidebar-normal">Diploma</span>
                   </a>
                 </li>
+
               </ul>
             </div>
           </li>
@@ -146,7 +128,7 @@
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Dashboard</a>
+            <a class="navbar-brand" href="#pablo">Student Info</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -156,7 +138,7 @@
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end">
-            <form class="navbar-form">
+            <!-- <form class="navbar-form">
               <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Search...">
                 <button type="submit" class="btn btn-white btn-round btn-just-icon">
@@ -164,7 +146,7 @@
                   <div class="ripple-container"></div>
                 </button>
               </div>
-            </form>
+            </form> -->
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#pablo">
@@ -205,184 +187,164 @@
           </div>
         </div>
       </nav>
+
+
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <!-- <button type="button" class="btn btn-round btn-default dropdown-toggle btn-link" data-toggle="dropdown"></button> -->
-
-          <!-- /////////////////////////////Basic card info //////////////////////////////////////-->
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-warning card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">face</i>
+            <div class="col-md-12">
+              <form>
+                <div class="row form-group">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="exampleInput1" class="bmd-label-floating">First Name </label>
+                      <input type="text" class="form-control" id="inputFirstName">
+                    </div>
                   </div>
-                  <p class="card-category">Students</p>
-                  <h3 class="card-title">184</h3>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons text-danger">warning</i>
-                    <a href="#pablo">Get More Space...</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-rose card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">equalizer</i>
-                  </div>
-                  <p class="card-category">Centers</p>
-                  <h3 class="card-title">75</h3>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">local_offer</i> Tracked from Google Analytics
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-success card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">library_books</i>
-                  </div>
-                  <p class="card-category">Running Exams</p>
-                  <h3 class="card-title">2</h3>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">info</i>
-                    <a href="#pablo">More Info</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-info card-header-icon">
-                  <div class="card-icon">
-                    <i class="material-icons">cloud_upload</i>
-                  </div>
-                  <p class="card-category">New Submitions</p>
-                  <h3 class="card-title text-danger">+245</h3>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">update</i> Just Updated
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- /////////////////////////////////// Grids //////////////////////////////// -->
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-rose" data-header-animation="true">
-                  <div class="ct-chart" id="websiteViewsChart"></div>
-                </div>
-                <div class="card-body">
-                  <div class="card-actions">
-                    <button type="button" class="btn btn-danger btn-link fix-broken-card">
-                      <i class="material-icons">build</i> Fix Header!
-                    </button>
-                    <button type="button" class="btn btn-info btn-link" rel="tooltip" data-placement="bottom" title="Refresh">
-                      <i class="material-icons">refresh</i>
-                    </button>
-                    <button type="button" class="btn btn-default btn-link" rel="tooltip" data-placement="bottom" title="Change Date">
-                      <i class="material-icons">edit</i>
-                    </button>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="exampleInput1" class="bmd-label-floating">Middle Name </label>
+                      <input type="text" class="form-control" id="inputMiddleName">
+                    </div>
                   </div>
-                  <h4 class="card-title">Poral Views</h4>
-                  <p class="card-category">Last Campaign Performance</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> campaign sent 2 days ago
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="exampleInput1" class="bmd-label-floating">last Name </label>
+                      <input type="text" class="form-control" id="inputLastName">
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="exampleInput1" class="bmd-label-floating">Full Name </label>
+                      <input type="text" readonly class="form-control" id="inputFullName">
+                    </div>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-md-2">
+                    <p style="margin-bottom: 2px;">Gender</p>
+                    <div class="form-check form-check-radio form-check-inline">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="gender" id="radioBtnMale" value="male" checked>Male
+                        <span class="circle">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-radio form-check-inline">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="gender" id="radioBtnFemale" value="femlae"> Female
+                        <span class="circle">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="exampleInput1" class="bmd-label-floating">Birthday</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                      </div>
+                    </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="exampleInput1" class="bmd-label-floating">NIC</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                      </div>
+                    </div>
+                </div>
+
+                
+                <div class="row form-group">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="exampleInput1" class="bmd-label-floating">Address Line 1</label>
+                        <input type="text" class="form-control" id="inputFirstName">
+                      </div>
+                    </div>
+  
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="exampleInput1" class="bmd-label-floating">Address Line 2</label>
+                        <input type="text" class="form-control" id="inputMiddleName">
+                      </div>
+                    </div>
+  
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="exampleInput1" class="bmd-label-floating">City</label>
+                        <input type="text" class="form-control" id="inputLastName">
+                      </div>
+                    </div>
+                    <!-- <label for="exampleInput1" class="bmd-label-floating">City</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>Galle</option>
+                      <option>Nuwaraeliya</option>
+                      <option>Kandy</option>
+                      <option>Jaffna</option>
+                      <option>Kaluthara</option>
+                      <option>Gampaha</option>
+                    </select> -->
+
+                    <div class="col-md-1">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Zip Code</label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+                  </div>
+
+               
+                  <div class="row form-group">
+                     
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Phone</label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value=""> Check me out
+                      <span class="form-check-sign">
+                        <span class="check"></span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+
+              </form>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-success" data-header-animation="true">
-                  <div class="ct-chart" id="dailySalesChart"></div>
-                </div>
-                <div class="card-body">
-                  <div class="card-actions">
-                    <button type="button" class="btn btn-danger btn-link fix-broken-card">
-                      <i class="material-icons">build</i> Fix Header!
-                    </button>
-                    <button type="button" class="btn btn-info btn-link" rel="tooltip" data-placement="bottom" title="Refresh">
-                      <i class="material-icons">refresh</i>
-                    </button>
-                    <button type="button" class="btn btn-default btn-link" rel="tooltip" data-placement="bottom" title="Change Date">
-                      <i class="material-icons">edit</i>
-                    </button>
-                  </div>
-                  <h4 class="card-title">Daily Sales</h4>
-                  <p class="card-category">
-                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> updated 4 minutes ago
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card card-chart">
-                <div class="card-header card-header-info" data-header-animation="true">
-                  <div class="ct-chart" id="completedTasksChart"></div>
-                </div>
-                <div class="card-body">
-                  <div class="card-actions">
-                    <button type="button" class="btn btn-danger btn-link fix-broken-card">
-                      <i class="material-icons">build</i> Fix Header!
-                    </button>
-                    <button type="button" class="btn btn-info btn-link" rel="tooltip" data-placement="bottom" title="Refresh">
-                      <i class="material-icons">refresh</i>
-                    </button>
-                    <button type="button" class="btn btn-default btn-link" rel="tooltip" data-placement="bottom" title="Change Date">
-                      <i class="material-icons">edit</i>
-                    </button>
-                  </div>
-                  <h4 class="card-title">Completed Tasks</h4>
-                  <p class="card-category">Last Campaign Performance</p>
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons">access_time</i> campaign sent 2 days ago
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
+        <footer class="footer ">
+          <div class="container">
+
+            <div class="copyright">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear())
+              </script>, made with
+              <i class="material-icons">favorite</i> by
+              <a href="http://ceylonux.com" target="_blank">Ceylon UX</a> for a better web.
+            </div>
+          </div>
+        </footer>
       </div>
-      
-      <footer class="footer ">
-        <div class="container">
-         
-          <div class="copyright">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with
-            <i class="material-icons">favorite</i> by
-            <a href="http://ceylonux.com" target="_blank">Ceylon UX</a> for a better web.
-          </div>
-        </div>
-      </footer>
     </div>
-  </div>
 </body>
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.min.js"></script>
@@ -455,6 +417,63 @@
 
     demo.initVectorMap();
   });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datatables').DataTable({
+      "pagingType": "full_numbers",
+      "lengthMenu": [
+        [5, 10, 25, 50, -1],
+        [5, 10, 25, 50, "All"]
+      ],
+      responsive: true,
+      language: {
+        search: "_INPUT_",
+        searchPlaceholder: "Search records",
+      }
+
+    });
+
+
+    var table = $('#datatables').DataTable();
+
+    // Edit record
+    table.on('click', '.edit', function () {
+      $tr = $(this).closest('tr');
+
+      var data = table.row($tr).data();
+      alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
+    });
+
+    // Delete a record
+    table.on('click', '.remove', function (e) {
+      $tr = $(this).closest('tr');
+      table.row($tr).remove().draw();
+      e.preventDefault();
+    });
+
+    //Like record
+    table.on('click', '.like', function () {
+      alert('You clicked on Like button');
+    });
+
+    $('.card .material-datatables label').addClass('form-group');
+  });
+
+  $('.datetimepicker').datetimepicker({
+    icons: {
+        time: "fa fa-clock-o",
+        date: "fa fa-calendar",
+        up: "fa fa-chevron-up",
+        down: "fa fa-chevron-down",
+        previous: 'fa fa-chevron-left',
+        next: 'fa fa-chevron-right',
+        today: 'fa fa-screenshot',
+        clear: 'fa fa-trash',
+        close: 'fa fa-remove'
+    }
+});
 </script>
 
 </html>
