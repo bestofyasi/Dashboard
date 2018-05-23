@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="../assets/img/apple-icon.png">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <title>
+    Sarvodaya | Student Management System Dashbord
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+  />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../assets/css/material-dashboard.css?v=2.0.1">
+  <!-- Documentation extras -->
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="/assets/css/material-dashboard.css" rel="stylesheet" />
+  <!-- iframe removal -->
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar" data-color="orange" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+          AA
+        </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Admin Area
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <div class="user">
+          <div class="photo">
+            <img src="../assets/img/faces/avatar.jpg" />
+          </div>
+          <div class="user-info">
+            <a data-toggle="collapse" href="#collapseExample" class="username">
+              <span>
+                User's Name
+                <b class="caret"></b>
+              </span>
+            </a>
+            <div class="collapse" id="collapseExample">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="sidebar-mini"> MP </span>
+                    <span class="sidebar-normal"> My Profile </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="sidebar-mini"> EP </span>
+                    <span class="sidebar-normal"> Edit Profile </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="sidebar-mini"> S </span>
+                    <span class="sidebar-normal"> Settings </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="./dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p> Dashboard </p>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" href="#pagesExamples" aria-expanded="true">
+              <i class="material-icons">face</i>
+              <p>Student
+                <b class="caret"></b>
+              </p>
+            </a>
+            <div class="collapse show" id="pagesExamples">
+              <ul class="nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./newStudents.html">
+                    <i class="material-icons">add</i>
+                    <span class="sidebar-normal">Add New </span>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="./students.html">
+                    <i class="material-icons">mode_edit</i>
+                    <span class="sidebar-normal">View/Edit</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-minimize">
+              <button id="minimizeSidebar" class="btn btn-just-icon btn-white btn-fab btn-round">
+                <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
+                <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
+              </button>
+            </div>
+            <!-- <a class="navbar-brand" href="#pablo">Add New Student</a> -->
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <!-- <form class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+                </button>
+              </div>
+            </form> -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#pablo">
+                  <i class="material-icons">dashboard</i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Stats</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#pablo" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification">5</span>
+                  <p>
+                    <span class="d-lg-none d-md-block">Some Actions
+                      <b class="caret"></b>
+                    </span>
+
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#pablo">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="#pablo">You have 5 new tasks</a>
+                  <a class="dropdown-item" href="#pablo">You're now friend with Andrew</a>
+                  <a class="dropdown-item" href="#pablo">Another Notification</a>
+                  <a class="dropdown-item" href="#pablo">Another One</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pablo">
+                  <i class="material-icons">person</i>
+                  <p>
+                    <span class="d-lg-none d-md-block">Account</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card ">
+                <div class="card-header card-header-text card-header-rose">
+                  <div class="card-text">
+                    <h4 class="card-title">New Diploma Info</h4>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <h4 class="card-title"></h4>
+                  <form>
+                    <div class="row form-group">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Center Name </label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Address Line 1</label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Address Line 2</label>
+                          <input type="text" class="form-control" id="inputMiddleName">
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">City</label>
+                          <input type="text" class="form-control" id="inputLastName">
+                        </div>
+                      </div>
+                      <!-- <label for="exampleInput1" class="bmd-label-floating">City</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Galle</option>
+                                <option>Nuwaraeliya</option>
+                                <option>Kandy</option>
+                                <option>Jaffna</option>
+                                <option>Kaluthara</option>
+                                <option>Gampaha</option>
+                              </select> -->
+
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Zip Code</label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row form-group">
+
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">Phone</label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- <div class="row form-group">
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                        <div class="fileinput-new thumbnail img-raised" style="width: 50%;">
+                          <img src="https://cdn4.iconfinder.com/data/icons/business-line2/64/line_document_paper_HR_avatar_people_person_-512.png"
+                            alt="...">
+                        </div>
+                        <div class="fileinput-preview fileinput-exists thumbnail  img-raised" style="width: 50%;"></div>
+                        <div>
+                          <span class="btn btn-raised btn-round btn-rose btn-file">
+                            <span class="fileinput-new">Add BR Reg form (Copy)</span>
+                            <span class="fileinput-exists">Change</span>
+                            <input type="file" name="..." />
+                          </span>
+                          <br />
+                          <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput">
+                            <i class="fa fa-times"></i> Remove</a>
+                        </div>
+                      </div>
+                    </div> -->
+                    <div class="form-group form-file-upload form-file-multiple">
+                      <div class="col-md-12">
+                        <input type="file" multiple="" class="inputFileHidden">
+                        <div class="input-group">
+                          <input type="text" class="form-control inputFileVisible" placeholder="Business Registration form(Copy)">
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-fab btn-round btn-primary">
+                              <i class="material-icons">attach_file</i>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="exampleInput1" class="bmd-label-floating">TVEC Registration No</label>
+                          <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <h3>List of equipments at the computer lab</h3>
+                      <p>1) Computer Specification</p>
+
+                      <div class="row form-group">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Processor Type</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Processor Speed</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Operating System</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">No of Computers</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <p>2) Software and other facilities</p>
+
+                      <div class="row form-group">
+                        <!-- <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Processor Type</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div> -->
+
+                        <div class="col-lg-7 col-md-8 col-sm-3">
+                          <select class="selectpicker" data-style="btn select-with-transition" multiple title="Select one or more" data-size="7">
+
+                            <option value="2">Micsoft Word </option>
+                            <option value="3">Microsoft Powerpoint</option>
+                            <option value="4">Microsoft Excel</option>
+                            <option value="5">Adobe Photoshop</option>
+                            <option value="6">Adobe Illustrator</option>
+                            <option value="7">CorelDraw</option>
+                            <option value="8">Paris </option>
+                            <option value="9">Bucharest</option>
+                            <option value="10">Rome</option>
+                            <option value="11">New York</option>
+                            <option value="12">Miami </option>
+                            <option value="13">Piatra Neamt</option>
+                            <option value="14">Paris </option>
+                            <option value="15">Bucharest</option>
+                            <option value="16">Rome</option>
+                            <option value="17">New York</option>
+                            <option value="18">Miami </option>
+                            <option value="19">Piatra Neamt</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value=""> Internet Facility
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value=""> Email Facility
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row form-group">
+                        <div class="col-md-12">
+                          <p style="margin-top: 15px; margin-bottom: 5px">Connection Type</p>
+                          <div class="form-check form-check-radio">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"> Leased Line
+                              <span class="circle">
+                                <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked> ADSL
+                              <span class="circle">
+                                <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3"> Broadband
+                              <span class="circle">
+                                <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio disabled">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" disabled> Dial Up
+                              <span class="circle">
+                                <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-12">
+                      <h3>Personal Information</h3>
+
+                      <div class="row form-group">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">First Name</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Middle Name</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Last Name</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <div class="row form-group">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Designation</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="row form-group">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Address line 1</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Address Line 2</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">City</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="row form-group">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">NIC</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Email</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label for="exampleInput1" class="bmd-label-floating">Phone</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+
+
+
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+
+          </div>
+
+        </div>
+      </div>
+      <footer class="footer ">
+        <div class="container">
+
+          <div class="copyright">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with
+            <i class="material-icons">favorite</i> by
+            <a href="http://ceylonux.com" target="_blank">Ceylon UX</a> for a better web.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/bootstrap-material-design.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin  -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
+<script src="../assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="../assets/js/plugins/nouislider.min.js"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="../assets/js/plugins/bootstrap-selectpicker.js"></script>
+<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+<script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!-- Plugins for presentation and navigation  -->
+<script src="../assets/assets-for-demo/js/modernizr.js"></script>
+<!-- Material Dashboard Core initialisations of plugins and Bootstrap Material Design Library -->
+<script src="../assets/js/material-dashboard.js?v=2.0.1"></script>
+<!-- Dashboard scripts -->
+<!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<!-- Library for adding dinamically elements -->
+<script src="../assets/js/plugins/arrive.min.js" type="text/javascript"></script>
+<!-- Forms Validations Plugin -->
+<script src="../assets/js/plugins/jquery.validate.min.js"></script>
+<!--  Charts Plugin, full documentation here: https://gionkunz.github.io/chartist-js/ -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+<script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+<!--  Notifications Plugin, full documentation here: http://bootstrap-notify.remabledesigns.com/    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+<script src="../assets/js/plugins/jquery-jvectormap.js"></script>
+<!-- Sliders Plugin, full documentation here: https://refreshless.com/nouislider/ -->
+<script src="../assets/js/plugins/nouislider.min.js"></script>
+<!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="../assets/js/plugins/jquery.select-bootstrap.js"></script>
+<!--  DataTables.net Plugin, full documentation here: https://datatables.net/    -->
+<script src="../assets/js/plugins/jquery.datatables.js"></script>
+<!-- Sweet Alert 2 plugin, full documentation here: https://limonte.github.io/sweetalert2/ -->
+<script src="../assets/js/plugins/sweetalert2.js"></script>
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+<script src="../assets/js/plugins/fullcalendar.min.js"></script>
+<!-- demo init -->
+<script src="../assets/js/plugins/demo.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    //init wizard
+
+    demo.initMaterialWizard();
+
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initDashboardPageCharts();
+
+    demo.initCharts();
+
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    demo.initVectorMap();
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datatables').DataTable({
+      "pagingType": "full_numbers",
+      "lengthMenu": [
+        [5, 10, 25, 50, -1],
+        [5, 10, 25, 50, "All"]
+      ],
+      responsive: true,
+      language: {
+        search: "_INPUT_",
+        searchPlaceholder: "Search records",
+      }
+
+    });
+
+
+    var table = $('#datatables').DataTable();
+
+    // Edit record
+    table.on('click', '.edit', function () {
+      $tr = $(this).closest('tr');
+
+      var data = table.row($tr).data();
+      alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
+    });
+
+    // Delete a record
+    table.on('click', '.remove', function (e) {
+      $tr = $(this).closest('tr');
+      table.row($tr).remove().draw();
+      e.preventDefault();
+    });
+
+    //Like record
+    table.on('click', '.like', function () {
+      alert('You clicked on Like button');
+    });
+
+    $('.card .material-datatables label').addClass('form-group');
+  });
+
+  $('.datetimepicker').datetimepicker({
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-chevron-up",
+      down: "fa fa-chevron-down",
+      previous: 'fa fa-chevron-left',
+      next: 'fa fa-chevron-right',
+      today: 'fa fa-screenshot',
+      clear: 'fa fa-trash',
+      close: 'fa fa-remove'
+    }
+  });
+</script>
+
+</html>
